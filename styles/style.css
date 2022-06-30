@@ -1,0 +1,304 @@
+/*---Reglas para todo el archivo---*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/*body{
+    border: solid red 5px;
+}*/
+/*-----------Header------------*/
+
+header{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header>img{
+    margin-left: 30px;
+}
+
+.menuNav>ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.menuNav>ul>li>a{
+    color:  rgb(35, 44, 81);
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+.menuNav>ul>li>a:hover{
+    opacity: 0.5;
+}
+
+.button{
+    color: white;
+    background-color: rgb(242, 95, 58);
+    height: 44px;
+    width: 134px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.button:hover{
+    opacity: 0.5;
+}
+
+header>.button{
+    margin-right: 30px;
+}
+
+/*------------Main------------------*/
+
+.containerCajasSuperior, .containerCajasInferior{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap; 
+}
+
+.caja{
+    width: 40vw;
+    min-width: 500px;
+    margin-bottom: 100px;
+}
+
+.titleSection{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+h1{
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: rgb(35, 44, 81);
+}
+
+p{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+main>section>div>p{
+    width: 350px;
+}
+
+.graficos{
+    max-width: 100%;
+    height: auto;
+}
+
+h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: rgb(35, 44, 81);
+    padding-bottom: 20px;
+}
+
+.listado>div{
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: 20px;
+}
+
+.listado>div>span{
+    width: 69px;
+    height: 43px;
+    background-color: rgb(242, 95, 58);
+    color: white;
+    border-radius: 30px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listado>div>h4{
+    display: flex;
+    align-items: center;
+}
+
+.listado>div>p{
+    margin-left: 94px;
+    padding-right: 100px;
+}
+
+
+/*----Opiniones----*/
+
+.opiniones>h2{
+    text-align: center;
+}
+
+.opiniones>div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}
+
+.opiniones>div>article{
+    background-color: rgb(249, 249, 249);
+    height: 220px; 
+    width: 30vw;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.perfil{
+    position: absolute;
+    padding-bottom: 220px;
+    width: 70px;
+}
+
+h4{
+    padding-bottom: 20px;
+}
+
+.opiniones>div>article>p{
+    text-align: center;
+    padding: 0 30px;
+}
+
+.botonCentro{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20vh;
+}
+
+.orangeSect{
+    background-color: rgb(242, 95, 58);
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: 10vw;
+    width: 500px;
+}
+
+.alt{
+    color: rgb(242, 95, 58);
+    background-color: white;
+    margin-right: 10vw;
+}
+
+/*---------Footer-------------*/
+
+
+footer{
+    background-color: rgb(29, 30, 37);
+    height: 35vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+footer>div{
+    height: 20vh;
+}
+
+.cajaRedes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cajaRedes>span{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cajaRedes>span>svg{
+    fill: white;
+}
+
+.cajaRedes>span>svg:hover{  /*chequear esto*/
+    fill: rgb(242, 95, 58);  
+}
+
+
+.footerNav>ul{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.footerNav>ul>li{
+    margin-bottom: 20px;
+}
+
+.footerNav>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footerNav>ul>li>a:hover{
+    color: rgb(242, 95, 58);
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form>input{
+    height: 44px;
+    width: 201px;
+    border-radius: 50px;
+    border: solid rgba(255, 0, 0, 0.7);
+    color: rgba(255, 0, 0, 0.7);
+    font-size: 0.7rem;
+    padding-left: 20px;
+}
+
+.submit{
+    width: 63px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.errorMail{
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 0.7rem;
+    margin-top: 5px;
+    color: rgba(255, 0, 0, 0.7);
+}
+
+.copyright{
+    position: absolute;
+    right: 17vw;
+    bottom: 7vh;
+    color: #8C8C94;
+}
